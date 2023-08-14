@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     .profile-card {
+      border: 2px solid white;
       border-radius: 10px;
       padding: 20px;
       box-shadow: rgba(0, 0, 0, .12) 0px 3px 16px;
@@ -18,6 +19,9 @@
       margin-bottom: 10px;
       border-radius: 50%;
     }
+    h2, h3, p {
+      color: white; 
+    }
     h2 {
       position: relative;
       font-family: 'Audiowide', cursive;
@@ -25,15 +29,35 @@
     p {
       text-align: center;
       font-size: 14px; 
+      font-family: cursive;
     }
     .about-section {
-      background-color: #f9f9f9;
       padding: 15px;
       border-radius: 7px;
+      border: 2px solid white;
     }
     .about-section h3 {
       margin-bottom: 20px;
       text-align: center;
+    }
+
+    /* Background animation */
+    body {
+      background: linear-gradient(135deg, #3498db, #e74c3c);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s ease infinite;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
     }
   </style>
   <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
@@ -46,9 +70,9 @@
         <div class="profile-card text-center py-4 px-3">
           <img src="https://articlebio.com/uploads/biography/2018/06/06/sophia-lillis.jpg" alt="" class="rounded-circle profile-image img-fluid">
           <h2>OneFinalHug</h2>
-          <div class="about-section">
-            <h6>(ANON INJECTOR)</h6>
-            <p>I code in my free time and enjoy playing COD, exploring errors ;), and defacing websites.<br>My skills include PHP, Python and SQL.<br>"I'm a fan of Scarjo, Elon Musk, Hugh Jackman, MJ, and Katy Perry."</p>
+          <div class="about-section p-4">
+            <h4 class="mb-3">About Me</h4>
+            <p>Welcome to my world of coding and exploration. I'm OneFinalHug, also known as the ANON INJECTOR. I spend my free time crafting code and diving into the world of web development. When I'm not coding, you'll find me immersed in the virtual battlefield of COD, or enjoying the thrill of debugging and fixing errors. My skill set includes PHP, Python, and SQL, allowing me to create robust solutions and web applications. But it's not all about coding! I'm also a fan of inspiring figures like Scarjo, Elon Musk, Hugh Jackman, MJ, and Katy Perry. Join me in my journey of discovery and creation!</p>
           </div>
           <div class="social-links mt-4">
             <a href="https://t.me/OneFinalHug" target="_blank" class="mr-3"><i class="fab fa-telegram"></i></a>
